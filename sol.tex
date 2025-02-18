@@ -6,6 +6,8 @@
 \usepackage{amssymb}
 \usepackage{enumitem}
 \usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{cd}
 
 \newcommand\quotient[2]{{^{\displaystyle #1}}/{_{\displaystyle #2}}}
 
@@ -44,6 +46,14 @@ Clearly, $\mathbb{C}[t^3, t^5]$ is an integral domain but not a field. Hence $\l
 \item {
 \begin{enumerate}[label={(\alph*)}]
 \item {
+Let $M$ and $N$ be $R$-modules. Then the tensor product $M \otimes_R N$ is an $R$-module equipped with a bilinear map $\alpha: M \times N \to M \otimes_R N$ such that for any $R$-module $P$ and any bilinear map $\beta: M \times N \to P$ there is a unique linear map $\tilde{\beta}: M \otimes_R N \to P$ with $\beta = \tilde{\beta} \circ \alpha$.
+\begin{center}
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAFkACAHW7wFt4nAHIgAvqXSZc+QigCM5KrUYs2XXhAHwA+gCUR4ySAzY8BIovnL6zVohAAFccphQA5vCKgAZgCcIfiQyEBwIJEUVOzZeRjQACzojXwCgxBCwpAAmals1B14AIxgcJOoGOmKGR2lzORA-LHd4nGSQf0CI6kzEHKj8kF48BlhgIpK6MRcxIA
+\begin{tikzcd}
+M \times N \arrow[r, "\alpha"] \arrow[rd, "\beta"'] & M \otimes_R N \arrow[d, "\tilde{\beta}"] \\
+                                                    & P                                       
+\end{tikzcd}
+\end{center}
 }
 \item {
 }
