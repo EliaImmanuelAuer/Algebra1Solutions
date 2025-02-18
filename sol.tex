@@ -56,6 +56,11 @@ M \times N \arrow[r, "\alpha"] \arrow[rd, "\beta"'] & M \otimes_R N \arrow[d, "\
 \end{center}
 }
 \item {
+Take any element of $U^{-1} R \otimes_R M$. Such an element can be written as $\sum_{i = 1}^n \frac{a_i}{b_i} c_i$ with $a_i \in R$, $b_i \in U$ and $c_i \in M$. But now
+\[
+\sum_{i = 1}^n \frac{a_i}{b_i} c_i = \sum_{i = 1}^n \frac{\left( \prod_{j \neq i} b_j \right) a_i}{\prod_{j} b_j} c_i = \frac{1}{\prod_{j} b_j} \sum_{i = 1}^n \left( \prod_{j \neq i} b_j \right) a_i c_i
+\]
+with $\prod_{j} b_j \in U$ and $\sum_{i = 1}^n \left( \prod_{j \neq i} b_j \right) a_i c_i \in M$.
 }
 \item {
 }
