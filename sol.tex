@@ -99,6 +99,17 @@ I_1 \supseteq I_2 \supseteq I_3 \supseteq \ldots
 eventually stabilizes, i.e. there is $n \in \mathbb{N}$ with $\forall m \geq n : I_m = I_n$.
 }
 \item {
+First of all, we will show that every Artinian domain is a field.
+\par
+Let $R$ be an Artinian domain. Take $a \in R$ with $a \neq 0$. Then we have a descending chain
+\[
+R \supseteq \langle a \rangle \supseteq \langle a^2 \rangle \supseteq \ldots
+\]
+This chain must eventually stabilize. Hence there is $n \in \mathbb{N}$ with $\langle a^n \rangle = \langle a^{n + 1} \rangle$. In particular, we have $a^n \in \langle a^{n + 1} \rangle$. This means that there is $b \in R$ with $a^n = b a^{n + 1}$, hence $0 = b a^{n + 1} - a^n = a^n \left( b a - 1 \right)$. Since $a \neq 0$ and $R$ is a domain, we must in fact have $0 = b a - 1$, hence $1 = b a$. Hence $a$ is a unit. Since every nonzero unit of $R$ is invertible, $R$ is a field.
+\par
+Now we will show that in an Artinian ring every prime ideal is maximal.
+\par
+Let $R$ be Artinian and $\mathfrak{p} \subseteq R$ be a prime ideal. Then $\quotient{R}{\mathfrak{p}}$ is an Artinian domain. By the first part, $\quotient{R}{\mathfrak{p}}$ is in fact a field. Hence $\mathfrak{p} \subseteq R$ is in fact a maximal ideal.
 }
 \item {
 }
