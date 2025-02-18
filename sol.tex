@@ -79,6 +79,11 @@ It is a well-known fact from linear algebra that every module over a field is fr
 On the other hand, assume that every $R$-module is free. Now take $a \in R$ with $a \neq 0$. Then, by assumption, the $R$-module $\quotient{R}{\langle a \rangle}$ is free. If it is free of nonzero rank, multiplication by $a$ must be a nonzero endomorphism of it. However, multiplication by $a$ is just the zero endomorphism. Hence it must be free of rank zero, i.e. $\quotient{R}{\langle a \rangle} \cong 0$, so that $\langle a \rangle = R$, i.e. $a$ is a unit. Hence every nonzero element of $R$ is invertible, so that $R$ is a field.
 }
 \item {
+Assume that $R$ is an integral domain.
+\par
+If $R$ is even a field, then every $R$-module is free and hence flat.
+\par
+On the other hand, assume that every $R$-module is flat. Now take $a \in R$ with $a \neq 0$. Now since $R$ is an integral domain, the map $R \overset{\cdot a}{\to} R$ is an injective endomorphism of $R$. Since every $R$-module is flat, $\quotient{R}{\langle a \rangle}$ is flat, so that $\quotient{R}{\langle a \rangle} \overset{\cdot a}{\to} \quotient{R}{\langle a \rangle}$ must also be injective. However, multiplication by $a$ is just the zero endomorphism on $\quotient{R}{\langle a \rangle}$. Hence we must have $\quotient{R}{\langle a \rangle} \cong 0$, so that $\langle a \rangle = R$. Hence $a$ is a unit. We have shown that every nonzero element of $R$ is invertible, i.e. that $R$ is a field.
 }
 \end{enumerate}
 }
