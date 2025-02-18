@@ -112,6 +112,17 @@ Now we will show that in an Artinian ring every prime ideal is maximal.
 Let $R$ be Artinian and $\mathfrak{p} \subseteq R$ be a prime ideal. Then $\quotient{R}{\mathfrak{p}}$ is an Artinian domain. By the first part, $\quotient{R}{\mathfrak{p}}$ is in fact a field. Hence $\mathfrak{p} \subseteq R$ is in fact a maximal ideal.
 }
 \item {
+We can compute
+\[
+\begin{array}{>{\displaystyle}c>{\displaystyle}l}
+& \langle xy, xz, yz \rangle \\
+= & \langle x, xz, yz \rangle \cap \langle y, xz, yz \rangle \\
+= & \langle x, yz \rangle \cap \langle y, xz \rangle \\
+= & \langle x, y \rangle \cap \langle x, z \rangle \cap \langle y, x \rangle \cap \langle y, z \rangle \\
+= & \langle x, y \rangle \cap \langle x, z \rangle \cap \langle y, z \rangle
+\end{array}
+\]
+All of these are clearly prime. Hence we have found a primary decomposition of $\langle xy, xz, yz \rangle$.
 }
 \item {
 }
