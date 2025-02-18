@@ -132,6 +132,25 @@ S \supsetneq \langle [x] \rangle \supsetneq \langle [x^2] \rangle \supsetneq \ld
 Geometrically, $S$ is the coordinate ring of a $1$-dimensional affine algebraic set.
 }
 \item {
+Clearly we have $\operatorname{dim}_K(S_0) = 1$. For each $d \geq 1$, the only nonzero monomials in $S_d$ are $[x^d]$, $[y^d]$ and $[z^d]$. Hence we have $\operatorname{dim}_K(S_d) = 3$. Hence the Hilbert function is
+\[
+\operatorname{HF}_S(d) = \begin{cases} 1, & d = 0 \\ 3, & d \geq 1 \\ \end{cases}
+\]
+Hence the Hilbert polynomial is
+\[
+\operatorname{HP}_S(t) = 3
+\]
+And the Hilbert series is
+\[
+\begin{array}{>{\displaystyle}c>{\displaystyle}l}
+& \operatorname{HS}_S(t) \\
+= & 1 + 3 t + 3 t^2 + 3 t^3 + \ldots \\
+= & 1 + 3t(1 + t + t^2 + t^3 + \ldots) \\
+= & 1 + \frac{3t}{1 - t} \\
+= & \frac{1 - t}{1 - t} + \frac{3t}{1 - t} \\
+= & \frac{1 + 2t}{1 - t} \\
+\end{array}
+\]
 }
 \end{enumerate}
 }
