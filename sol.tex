@@ -5,6 +5,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{enumitem}
+\usepackage{array}
 
 \newcommand\quotient[2]{{^{\displaystyle #1}}/{_{\displaystyle #2}}}
 
@@ -26,6 +27,17 @@ We have shown that $R \setminus \mathfrak{m} \subseteq R^\times$, i.e. $\mathfra
 Let $\overline{\mathfrak{m}} \subseteq \quotient{\mathbb{Q}[x, y]}{\langle x^{20}, y^{20} \rangle}$ be a maximal ideal. This corresponds to a maximal ideal $\mathfrak{m} \subseteq \mathbb{Q}[x, y]$ with $\langle x^{20}, y^{20} \rangle \subseteq \mathfrak{m}$. Hence $x^{20}, y^{20} \in \mathfrak{m}$. But since $\mathfrak{m}$ is a maximal ideal, it's also a prime ideal. Hence $x, y \in \mathfrak{m}$, hence $\langle x, y \rangle \subseteq \mathfrak{m}$. Since $\langle x, y \rangle \subseteq \mathbb{Q}[x, y]$ is a maximal ideal, we have $\langle x, y \rangle = \mathfrak{m}$. Hence $\quotient{\mathbb{Q}[x, y]}{\langle x^{20}, y^{20} \rangle}$ has a unique maximal ideal, i.e. it's a local ring.
 }
 \item {
+One can see that the map
+\[
+\begin{array}{>{\displaystyle}c}
+\quotient{\mathbb{C}[x, y]}{\langle x^3 - y^5 \rangle} \to \mathbb{C}[t^3, t^5], \\ \relax
+[x] \mapsto t^5, \\ \relax
+[y] \mapsto t^3 \\
+\end{array}
+\]
+is an isomorphism.
+\par
+Clearly, $\mathbb{C}[t^3, t^5]$ is an integral domain but not a field. Hence $\langle x^3 - y^5 \rangle \subseteq \mathbb{C}[x, y]$ is a prime ideal but not a maximal ideal.
 }
 \end{enumerate}
 }
