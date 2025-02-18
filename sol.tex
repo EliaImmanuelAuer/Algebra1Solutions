@@ -16,6 +16,9 @@ Let $P = \{I \subsetneq R \mid I \text{ is an ideal of } R\}$ be the partially o
 Equivalently, this means that $\quotient{R}{\mathfrak{m}}$ is a field.
 }
 \item {
+Let $a \not\in \mathfrak{m}$. Then $\langle a \rangle + \mathfrak{m} \supsetneq \mathfrak{m}$, so $\langle a \rangle + \mathfrak{m} = R$. Hence there is $b \in R$ and $c \in \mathfrak{m}$ with $ab + c = 1$, so that $ab = 1 - c$. But now $1 - c \in 1 + \mathfrak{m}$, which by assumption only consists of units. Hence $ab$ is a unit. But then both factors must be units, so that $a$ must be a unit.
+\par
+We have shown that $R \setminus \mathfrak{m} \subseteq R^\times$, i.e. $\mathfrak{m} \supseteq R \setminus R^\times$. But any proper ideal only consists of non-units, so that $\mathfrak{m} \subseteq R \setminus R^\times$. Hence $\mathfrak{m} = R \setminus R^\times$, which means exactly that $R$ is local with unique maximal ideal $\mathfrak{m}$.
 }
 \item {
 }
